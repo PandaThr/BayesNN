@@ -19,7 +19,7 @@ To install from source instead:
 
 ```bash
 git clone https://github.com/PandaThr/BayesNN.git
-cd BayesianNN
+cd bayesnn
 pip install .
 ```
 
@@ -67,4 +67,7 @@ optimizer.step()
 ```
 
 ## Project structure
-- `bayesnn/`: Source package exposed when you install the library.
+- `bayesnn/`
+  - `BayesianLinear.py` – Bayesian linear layer definition.
+  - `functionals.py` – KL divergence and log-likelihood helpers.
+  - `loss.py` – variational Bayes and α-divergence objectives.
