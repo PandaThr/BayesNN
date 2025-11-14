@@ -8,11 +8,10 @@ class BayesianLinear(Module):
     
     def __init__(self,in_features:int, out_features:int,
                 mu_prior:float = 0.0, rho:float = 0.0,
-                bias: bool = True, output_noise:bool = False,
+                bias: bool = True,
                 device = None, dtype = None):
         factory_kwargs = {"device": device, "dtype": dtype}
         super().__init__()
-        self.output_noise = output_noise
         self.device = device 
         self.in_features = in_features
         self.out_features = out_features

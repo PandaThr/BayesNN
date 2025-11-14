@@ -1,5 +1,5 @@
 """
-Public interface for the BayesianNN package.
+Public interface for the BayesNN package.
 """
 
 from .BayesianLinear import BayesianLinear
